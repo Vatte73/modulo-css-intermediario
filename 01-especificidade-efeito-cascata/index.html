@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade e efeito cascata</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container-cascata {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    Efeito Cascata – O efeito cascata no CSS ocorre porque o navegador lê e aplica os estilos de cima para baixo, seguindo uma ordem de prioridade. Para entender melhor, observe este exemplo:
+
+    Logo após o título <h2>Efeito Cascata</h2>, temos diferentes formas de aplicar estilos:
+
+    * Um arquivo externo chamado style.css.
+    * Uma tag <style> no <head>.
+    * Uma <div> com a classe container-cascata, que também possui um estilo interno (<style>).
+    * E por fim, um estilo inline diretamente na div.
+
+    Durante a leitura do código, o navegador vai aplicando os estilos na ordem em que aparecem:
+
+    1. Primeiro, aplica o background-color: aqua vindo do arquivo style.css.
+    2. Em seguida, esse valor é sobrescrito por background-color: orange, vindo também do arquivo style.css.
+    3. Depois, encontra outro estilo dentro do HTML que define background-color: blueviolet, que sobrescreve o anterior.
+    4. Por fim, o estilo inline define background-color: brown, que tem a maior prioridade, sobrescrevendo todos os anteriores.
+
+    Esse processo de aplicar e sobrescrever estilos é o que chamamos de efeito cascata.   
+    -->
+
+    <h2>Efeito cascata</h2>
+
+    <div class="container-cascata" style="background-color: brown;">
+        <h2>Container Cascata</h2>
+    </div>
+
+
+    <!-- 
+    Especificidade - o efeito de especificidade funciona com cada seletor tendo um tipo de pontuação. Quanto mais específico for o seletor, maior sua pontuação e o aplicando.
+    
+    Ordem de pontuação:
+    01- Seletores;
+    02- Classes;
+    03- IDs;
+    04- Estilo inline;
+    05- !important(Colocando ele em um celetor comum força a aplicação do mesmo, mesmo com a pontuação menor).
+    -->
+    <h2>Especificidade</h2>
+
+    <div class="container-especificidade">
+        <h2>Container Especificidade</h2>
+        <p id="meu-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quasi libero voluptates iure qui laudantium molestiae non reiciendis optio cupiditate. Sapiente dolor et odit reprehenderit quod modi exercitationem minus nihil!</p>
+    </div>
+
+</body>
+</html>
