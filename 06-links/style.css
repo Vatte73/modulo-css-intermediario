@@ -1,18 +1,23 @@
+
+/* Mudando o cursor quando passa em cima */
 a {
     cursor: progress;
     margin: 20px;
     padding: 10px;
 }
 
+/* Muda a cor quando o link ja foi acessado */
 a:visited {
     color: greenyellow;
 }
 
+/* Muda a cor enquanto é clicado */
 a:active {
     color: orangered;
 }
 
-/* a:hover {
+/* Muda quando passa por cima */
+a:hover {
     background-color: green;
     color: darkmagenta;
-} */
+}
