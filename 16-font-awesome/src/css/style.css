@@ -1,0 +1,31 @@
+
+
+.fa-instagram {
+    color: greenyellow;
+    font-size: 90px;
+}
+
+.fa-instagram:hover {
+    color: blueviolet;
+    font-size: 70px;
+}
+
+.fa-linkedin {
+    color: blue;
+    font-size: 70px;
+}
+
+.fa-linkedin:hover {
+    color: lightblue;
+    font-size: 50px;
+
+}
+
+.fa-github{
+    font-size: 50px;
+}
+
+.fa-github:hover{
+    color: grey;
+    font-size: 90px;
+}
